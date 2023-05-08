@@ -12,7 +12,7 @@ setup(
     name         = "PyNvJpeg",
     version      = "1.0.0",
     author       = "yangxian",
-    author_email = "yangxian-001@cpic.com.cn",
+    author_email = "xyswjtu@163.com",
     packages     = ['nvjpeg'],
     ext_modules  = [
         CUDAExtension(name         = "nvjpeg_wrapper", 
