@@ -124,10 +124,7 @@ python setup.py install
 
 ## 六、作者信息
 <br>
-@Copyright  AI工程化BU   2023.05.06
-
-yangxian-001@cpic.com.cn, haugnchao-015@cpic.com.cn
-
+@Copyright  杨现   2023.05.06
 
 ## 七、参考文档
 <br>
