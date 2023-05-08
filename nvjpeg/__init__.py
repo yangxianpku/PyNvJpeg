@@ -11,7 +11,7 @@ from   nvjpeg_wrapper             import (NvJpegExecption, NvJpeg, ChromaSubsamp
                                           InputFormat, OutputFormat)
 
 __version__    = "1.0.0"
-__author__     = "yangxian-001@cpic.com.cn"
+__author__     = "xyswjtu@163.com"
 
 exception      = NvJpegExecption
 
