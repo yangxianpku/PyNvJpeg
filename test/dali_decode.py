@@ -1,6 +1,5 @@
 import cv2
 import torch
-import nvjpeg
 import ctypes
 import numpy as np
 
