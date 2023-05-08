@@ -22,7 +22,7 @@ inline const char* error_string(nvjpegStatus_t status) {
     case NVJPEG_STATUS_ARCH_MISMATCH:                 return "arch mismatch";
     case NVJPEG_STATUS_INTERNAL_ERROR:                return "internal error";
     case NVJPEG_STATUS_IMPLEMENTATION_NOT_SUPPORTED:  return "implementation not supported";
-    case NVJPEG_STATUS_INCOMPLETE_BITSTREAM:          return "incompatible bitstream";
+    // case NVJPEG_STATUS_INCOMPLETE_BITSTREAM:          return "incompatible bitstream";
     default:                                          return "unknown error";
   }
 }
