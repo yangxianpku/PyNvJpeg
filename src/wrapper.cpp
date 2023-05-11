@@ -402,8 +402,8 @@ PYBIND11_MODULE(TORCH_EXTENSION_NAME, m) {                                // TOR
         .value("CSS_411",  nvjpegChromaSubsampling_t::NVJPEG_CSS_411)
         .value("CSS_410",  nvjpegChromaSubsampling_t::NVJPEG_CSS_410)
         .value("CSS_GRAY", nvjpegChromaSubsampling_t::NVJPEG_CSS_GRAY)
-        .value("CSS_410V", nvjpegChromaSubsampling_t::NVJPEG_CSS_410V)
-        .value("CSS_UNK",  nvjpegChromaSubsampling_t::NVJPEG_CSS_UNKNOWN)
+        //.value("CSS_410V", nvjpegChromaSubsampling_t::NVJPEG_CSS_410V)
+        //.value("CSS_UNK",  nvjpegChromaSubsampling_t::NVJPEG_CSS_UNKNOWN)
         .export_values();
 
   py::enum_<nvjpegInputFormat_t>(m, "InputFormat")                        // 4. 注册编码时的输入图像数据格式
