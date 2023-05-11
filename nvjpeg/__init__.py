@@ -94,8 +94,8 @@ class nvjpegChromaSubsampling:            # 编码时默认的下采样格式，
     CSS_411    = ChromaSubsampling.CSS_411
     CSS_410    = ChromaSubsampling.CSS_410
     CSS_GRAY   = ChromaSubsampling.CSS_GRAY
-    CSS_410V   = ChromaSubsampling.CSS_410V
-    CSS_UNK    = ChromaSubsampling.CSS_UNK
+    #CSS_410V   = ChromaSubsampling.CSS_410V
+    #CSS_UNK    = ChromaSubsampling.CSS_UNK
 
 
 class nvjpegInputFormat:            # 指定编码时输入的数据格式
