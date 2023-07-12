@@ -60,7 +60,7 @@ def img_decode_pipe():
 #     return images, shape
 
 
-class ImageCoderCPIC(object):
+class ImageCoder(object):
     def __init__(self) -> None:
         self._rotate_func = {
             1: lambda x: x,                                                             # 1：默认值，没有旋转，照片的方向是原始方向
