@@ -241,7 +241,7 @@ class ImageCoder(object):
 
 
     def imread(self, img_file, ignore_orientation = False):
-        with open(img_file, "rb") as fp:
+        with open(img_file, "rb") as fp:     # TODO: 文件读取可以改成异步实现
             img_bytes = fp.read()
             return self.imdecode(img_bytes, ignore_orientation)
 
@@ -253,6 +253,7 @@ class ImageCoder(object):
             logger.warning("dali decoder pipe broken, use cpu for decoding")
             return self._cpu_decode(img_bytes, ignore_orientation, exif_info)
 
+        # jpeg2000[CUDA 11.x]： img_bytes[:12] = b'\x00\x00\x00\x0cjP  \r\n\x87\n'
         if img_bytes[:2] != b'\xFF\xD8':   # 2. 如果不是jpeg图像, 直接走cpu decode
             logger.warning("not jpeg image, use cpu for decoding")
             return self._cpu_decode(img_bytes, ignore_orientation, exif_info)
@@ -325,7 +326,8 @@ class ImageCoder(object):
 
 # Notice
 # 1. 注意大图显存溢出问题, 合理设置大图上限
-# 2. 根据需要设置解码后的图像格式
+# 2. 根据需要设置解码后的图像格式, 下采样方式，图像质量保留得分
 
 # TODO:
 # 1. GPU加速png与tiff解码;
+# 2. 图像不解码resize操作;
