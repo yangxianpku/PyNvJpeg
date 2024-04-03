@@ -116,7 +116,7 @@ nvidia-dali-cuda110
 <br>
 
 ```bash
-git clone http://code.hq.cpic.com/GP21AIMMS/pynvjpeg
+https://github.com/yangxianpku/PyNvJpeg.git
 cd  PyNvJpeg
 
 python setup.py install 
